@@ -1,0 +1,109 @@
+.sidenav {
+    font-family: cursive;
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(31, 31, 31);
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    text-align: center;
+    padding: 16px 18px 16px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .sidenav a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .sidenav a:hover {
+    background-color: #af634c;
+    color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .main {
+    margin-left: 160px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+p{
+  font-family: cursive;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: cursive;
+}
+
+calculator {
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.calculator-screen {
+  width: 100%;
+  height: 80px;
+  border: none;
+  background-color: #252525;
+  color: #fff;
+  text-align: right;
+  padding: 0 20px;
+  font-size: 2.5em;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  height: 80px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+button.operator {
+  background-color: #f5913e;
+  color: #fff;
+}
+
+button.equal-sign {
+  background-color: #3d94f6;
+  grid-column: span 2;
+}
+
+button.all-clear {
+  background-color: #ff5151;
+  color: #fff;
+}
